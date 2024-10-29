@@ -1,0 +1,15 @@
+:root {
+    --main-background-color: rgb(255, 255, 255);
+    --first_word_color: rgb(237, 199, 183);
+    --second_word_color: rgb(172, 59, 97);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
