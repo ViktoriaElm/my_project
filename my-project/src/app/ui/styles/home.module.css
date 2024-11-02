@@ -1,9 +1,7 @@
 .main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   height: 100vh;
-  /* min-width: 300px;
-  max-width: 360px; */
   width: 100%;
   background-color: #eee2dc;
 }
@@ -12,13 +10,11 @@
   display: flex;
   flex-direction: column;
   width: 75%;
-  /* margin: 0 20px; */
 }
 
 .start_page_box,
 .title_box {
   display: flex;
-
   align-items: center;
 }
 
@@ -29,7 +25,7 @@
 }
 
 .title_box {
-width: 100%;
+  width: 100%;
 }
 
 .start_page_box {
@@ -50,6 +46,11 @@ width: 100%;
 
 .second_word_title {
   color: var(--second_word_color);
+}
+
+.subtitle {
+  color: var(--second_word_color);
+  text-transform: capitalize;
 }
 
 /* ============================ */
@@ -106,7 +107,6 @@ width: 100%;
   .second_word_title {
     font-size: 54px;
   }
-
 }
 
 @media (min-width: 1366px) and (max-width: 1920px) {
@@ -125,9 +125,4 @@ width: 100%;
   .second_word_title {
     font-size: 54px;
   }
-}
-
-.subtitle {
-  color: var(--second_word_color);
-  text-transform: capitalize;
 }

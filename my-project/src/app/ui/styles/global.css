@@ -2,6 +2,7 @@
     --main-background-color: rgb(255, 255, 255);
     --first_word_color: rgb(237, 199, 183);
     --second_word_color: rgb(172, 59, 97);
+    --light_background_color: rgb(237, 199, 183, .3);
 }
 
 * {
@@ -11,6 +12,7 @@
 
 .body {
     display: flex;
+    flex-direction: column;
     /* justify-content: center; */
     justify-content: space-evenly;
     min-width: 300px;
