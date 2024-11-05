@@ -1,5 +1,7 @@
 import styles from "@/app/ui/styles/navigation.module.css";
 import Image from 'next/image';
+// import Link from "next/link";
+import NavLinks from "@/app/ui/components/navigation/nav-links"
 
 export function Navigation() {
     return (
@@ -21,9 +23,7 @@ export function Navigation() {
                 />
             </div>
             <div className={styles.navigation_links_box}>
-                <span className={styles.navigation_link}>
-                    About courses
-                </span>
+            <NavLinks/>
             </div>
         </nav>
     )

@@ -1,0 +1,9 @@
+.nav_links_link {
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 15px;
+}
+
+/* .nav_links_link:focus {
+color: red;
+} */
