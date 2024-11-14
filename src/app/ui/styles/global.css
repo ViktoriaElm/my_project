@@ -13,8 +13,9 @@
 .body {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     justify-content: space-evenly;
     min-width: 300px;
     max-width: 100%;
+    /* background-color: red; */
 }

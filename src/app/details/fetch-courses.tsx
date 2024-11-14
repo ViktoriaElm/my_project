@@ -1,7 +1,7 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import styles from "@/app/ui/styles/cards.module.css";
 
 let url = 'http://localhost:8000/course';
 
@@ -38,26 +38,33 @@ export default function CourseComponent() {
     }, []);
 
     return (
-        <div>
-            <h1>Courses</h1>
+        <div className={styles.course_box}>
             {
                 courses.map(course => (
-                    <div key={course.id}>
+                    <div key={course.id}
+                        className={styles.card}>
                         {course && course.image ? (
                             <Image
-                            src={course.image}
-                            width={250}
-                            height={150}
-                            className=''
-                            alt="Background"
-                        />
+                                src={course.image}
+                                width={250}
+                                height={150}
+                                className={styles.card_image}
+                                alt="Background"
+                            />
                         ) : (
-                        <p>Loading...</p>
-                    )}
+                            <p
+                                className={`${styles.card}, ${styles.none}`}
+                            >Loading...</p>
+                        )}
+                        <div
+                            className={styles.card_description_box}>
+                            <h3>{course.title}</h3>
+                            <p>{course.duration}</p>
+                            <p>{course.level}</p>
 
-                        <h3>{course.title}</h3>
-                        <p>{course.duration}</p>
-                        <p>{course.level}</p>
+                            {course && course.title ? <button
+                                className={styles.button_card_details}>More...</button> : ""}
+                        </div>
                     </div>
                 ))
             }
