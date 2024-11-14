@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "@/app/ui/styles/cards.module.css";
 
-let url = 'http://localhost:8000/course';
+const url = 'http://localhost:8000/course';
 
 export default function CourseComponent() {
     const [courses, setCourses] = useState([{
@@ -31,7 +31,7 @@ export default function CourseComponent() {
                 const data = await response.json();
                 setCourses(data);
             } catch (error) {
-                console.error('Error:, error');
+                console.error('Error:', error);
             }
         }
         fetchCourseData();
