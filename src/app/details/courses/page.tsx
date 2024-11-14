@@ -1,4 +1,4 @@
-import CourseComponent from "@/app/details/fetch-courses"
+// import CourseComponent from "@/app/details/fetch-courses"
 
 export default function Page() {
   return (
