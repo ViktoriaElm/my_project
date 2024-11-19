@@ -1,6 +1,5 @@
 import styles from "@/app/ui/styles/navigation.module.css";
 import Image from 'next/image';
-// import Link from "next/link";
 import NavLinks from "@/app/ui/components/navigation/nav-links"
 
 export function Navigation() {

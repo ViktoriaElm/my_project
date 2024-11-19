@@ -1,0 +1,45 @@
+.skeleton_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card_skeleton {
+    display: flex;
+    box-shadow: 1px 3px 6px rgb(0, 0, 0, 0.1), -1px -3px 6px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.card_sceleton_image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 50%;
+}
+
+.card_sceleton_title {
+    margin-top: 15px;
+    opacity: 30%;
+}
+
+.card_sceleton_text {
+    margin-top: 5px;
+    opacity: 15%;
+}
+
+@media (min-width: 478px) and (max-width: 1920px) {
+
+    .skeleton_box {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: normal;
+    }
+}

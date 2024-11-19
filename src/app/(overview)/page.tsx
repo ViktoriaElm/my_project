@@ -1,6 +1,8 @@
 import styles from "@/app/ui/styles/home.module.css";
 import { lusitana } from '@/app/ui/fonts';
 import CourseComponent from "@/app/details/fetch-courses";
+import { Suspense } from "react";
+import AboutCoursesSkeleton from "@/app/ui/components/skeletons/AboutCoursesSkeleton";
 
 export default function Home() {
   return (
@@ -29,8 +31,9 @@ function MainBlock() {
 
 function SecondBlock() {
   return (
-    // <div className={styles.start_page_courses_box}>
+    <Suspense fallback={<AboutCoursesSkeleton />}>
       <CourseComponent />
-    // </div>
+    </Suspense>
+
   )
 }

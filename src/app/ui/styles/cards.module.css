@@ -7,15 +7,13 @@
     padding-bottom: 30px;
 }
 
-.card.none {
-    opacity: 0;
-}
-
 .card {
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin: 20px;
     border-radius: 10px;
+    width: 200px;
+    height: 250px;
     box-shadow: 1px 3px 6px rgb(0, 0, 0, 0.1), -1px -3px 6px rgb(0, 0, 0, 0.1);
 }
 
@@ -23,6 +21,7 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     margin-bottom: 15px;
+    width: 200px;
 }
 
 .card_description_box {
@@ -36,31 +35,12 @@
     color: var(--second_word_color);
 }
 
-@media (min-width: 361px) and (max-width: 1920px) {
-    .card_image {
-        width: 200px;
-        height: auto;
-    }
+@media (min-width: 478px) and (max-width: 1920px) {
 
     .course_box {
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-}
-
-@media (min-width: 1001px) and (max-width: 1365px) {
-    .card_image {
-        width: 250px;
-        height: auto;
-    }
-}
-
-@media (min-width: 1366px) and (max-width: 1920px) {
-
-    .card_image {
-        width: 300px;
-        height: auto;
+        align-items: normal;
     }
 }
